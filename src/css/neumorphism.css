@@ -1,0 +1,100 @@
+/* Neumorphism Style Overrides */
+
+/* Apply neumorphism styles when data-style="neumorphism" */
+[data-style="neumorphism"] {
+  /* Card styles with neumorphic shadows */
+  .rounded-\[10px\],
+  .rounded-xl,
+  .rounded-lg {
+    box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6), -9px -9px 16px rgba(255, 255, 255, 0.5);
+  }
+
+  /* Buttons with neumorphic effect */
+  button:not(.flat),
+  .btn {
+    box-shadow: 4px 4px 8px rgba(163, 177, 198, 0.6), -4px -4px 8px rgba(255, 255, 255, 0.5);
+    transition: all 0.3s ease;
+  }
+
+  button:not(.flat):active,
+  .btn:active {
+    box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2), inset -6px -6px 10px 0 rgba(255, 255, 255, 0.5);
+  }
+
+  /* Input fields */
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="number"],
+  input[type="search"],
+  textarea,
+  select {
+    box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.15), inset -6px -6px 10px 0 rgba(255, 255, 255, 0.7);
+    border: none;
+    background: #E0E5EC;
+  }
+
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="password"]:focus,
+  input[type="number"]:focus,
+  input[type="search"]:focus,
+  textarea:focus,
+  select:focus {
+    box-shadow: inset 4px 4px 8px 0 rgba(0, 0, 0, 0.15), inset -4px -4px 8px 0 rgba(255, 255, 255, 0.7);
+  }
+
+  /* Sidebar with neumorphic effect */
+  aside {
+    box-shadow: 12px 0 24px rgba(163, 177, 198, 0.4);
+  }
+
+  /* Header */
+  header {
+    box-shadow: 0 9px 16px rgba(163, 177, 198, 0.4);
+  }
+
+  /* Override card backgrounds for neumorphism */
+  .bg-white {
+    background: #E0E5EC !important;
+  }
+
+  /* Charts container */
+  .apexcharts-canvas {
+    filter: drop-shadow(4px 4px 8px rgba(163, 177, 198, 0.3));
+  }
+}
+
+/* Dark mode neumorphism */
+[data-style="neumorphism"].dark {
+  .rounded-\[10px\],
+  .rounded-xl,
+  .rounded-lg {
+    box-shadow: 9px 9px 16px rgba(0, 0, 0, 0.4), -9px -9px 16px rgba(255, 255, 255, 0.05);
+  }
+
+  button:not(.flat),
+  .btn {
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4), -4px -4px 8px rgba(255, 255, 255, 0.05);
+  }
+
+  button:not(.flat):active,
+  .btn:active {
+    box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.5), inset -6px -6px 10px 0 rgba(255, 255, 255, 0.03);
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="number"],
+  input[type="search"],
+  textarea,
+  select {
+    box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.5), inset -6px -6px 10px 0 rgba(255, 255, 255, 0.03);
+    background: #2D3748;
+  }
+
+  .bg-white {
+    background: #2D3748 !important;
+  }
+}

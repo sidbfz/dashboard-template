@@ -1,0 +1,232 @@
+/* Neobrutalism Style Overrides */
+
+/* Apply neobrutalism styles when data-style="neobrutalism" */
+[data-style="neobrutalism"] {
+  /* Card styles with thick borders and hard shadows */
+  .rounded-\[10px\],
+  .rounded-xl,
+  .rounded-lg {
+    border: 3px solid #000000 !important;
+    border-radius: 0 !important;
+    box-shadow: 6px 6px 0 0 #000000 !important;
+    transition: all 0.2s ease;
+  }
+
+  .rounded-\[10px\]:hover,
+  .rounded-xl:hover,
+  .rounded-lg:hover {
+    box-shadow: 8px 8px 0 0 #000000 !important;
+    transform: translate(-2px, -2px);
+  }
+
+  /* Prevent dropdowns from shifting */
+  .dropdown-menu,
+  [role="menu"],
+  .absolute {
+    transform: none !important;
+  }
+
+  .dropdown-menu:hover,
+  [role="menu"]:hover,
+  .absolute:hover {
+    transform: none !important;
+  }
+
+  /* Center-aligned dropdowns need special handling for the shadow offset */
+  [role="menu"].left-1\/2 {
+    transform: translateX(-50%) !important;
+  }
+
+  [role="menu"].left-1\/2:hover {
+    transform: translateX(-50%) !important;
+  }
+
+  /* Buttons with bold neobrutalism style */
+  button:not(.flat),
+  .btn {
+    border: 3px solid #000000 !important;
+    border-radius: 0 !important;
+    box-shadow: 4px 4px 0 0 #000000 !important;
+    font-weight: 700;
+    transition: all 0.2s ease;
+  }
+
+  button:not(.flat):hover,
+  .btn:hover {
+    box-shadow: 6px 6px 0 0 #000000 !important;
+    transform: translate(-2px, -2px);
+  }
+
+  button:not(.flat):active,
+  .btn:active {
+    box-shadow: 2px 2px 0 0 #000000 !important;
+    transform: translate(2px, 2px);
+  }
+
+  /* Input fields */
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="number"],
+  input[type="search"],
+  textarea,
+  select {
+    border: 3px solid #000000 !important;
+    border-radius: 0 !important;
+    background: #FFFFFF;
+    font-weight: 600;
+  }
+
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="password"]:focus,
+  input[type="number"]:focus,
+  input[type="search"]:focus,
+  textarea:focus,
+  select:focus {
+    box-shadow: 4px 4px 0 0 #000000 !important;
+    transform: translate(-2px, -2px);
+  }
+
+  /* Sidebar with bold border */
+  aside {
+    border-right: 4px solid #000000 !important;
+    box-shadow: none !important;
+  }
+
+  /* Header */
+  header {
+    border-bottom: 4px solid #000000 !important;
+    box-shadow: none !important;
+  }
+
+  /* Override backgrounds */
+  .bg-white {
+    background: #FFFFFF !important;
+  }
+
+  .bg-gray-2 {
+    background: #F5F5F5 !important;
+  }
+
+  /* Charts with borders */
+  .apexcharts-canvas {
+    border: 3px solid #000000;
+    padding: 8px;
+  }
+
+  /* Remove rounded corners globally */
+  * {
+    border-radius: 0 !important;
+  }
+
+  /* Specific overrides for small elements */
+  .rounded-full {
+    border-radius: 0 !important;
+  }
+
+  /* Badges and small components */
+  .rounded,
+  .rounded-md,
+  .rounded-sm {
+    border-radius: 0 !important;
+    border: 2px solid #000000;
+  }
+}
+
+/* Dark mode neobrutalism */
+[data-style="neobrutalism"].dark {
+  .rounded-\[10px\],
+  .rounded-xl,
+  .rounded-lg {
+    border: 3px solid #FFFFFF !important;
+    box-shadow: 6px 6px 0 0 #FFFFFF !important;
+  }
+
+  .rounded-\[10px\]:hover,
+  .rounded-xl:hover,
+  .rounded-lg:hover {
+    box-shadow: 8px 8px 0 0 #FFFFFF !important;
+  }
+
+  /* Prevent dropdowns from shifting in dark mode */
+  .dropdown-menu,
+  [role="menu"],
+  .absolute {
+    transform: none !important;
+  }
+
+  .dropdown-menu:hover,
+  [role="menu"]:hover,
+  .absolute:hover {
+    transform: none !important;
+  }
+
+  /* Center-aligned dropdowns need special handling for the shadow offset */
+  [role="menu"].left-1\/2 {
+    transform: translateX(-50%) !important;
+  }
+
+  [role="menu"].left-1\/2:hover {
+    transform: translateX(-50%) !important;
+  }
+
+  button:not(.flat),
+  .btn {
+    border: 3px solid #FFFFFF !important;
+    box-shadow: 4px 4px 0 0 #FFFFFF !important;
+  }
+
+  button:not(.flat):hover,
+  .btn:hover {
+    box-shadow: 6px 6px 0 0 #FFFFFF !important;
+  }
+
+  button:not(.flat):active,
+  .btn:active {
+    box-shadow: 2px 2px 0 0 #FFFFFF !important;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="number"],
+  input[type="search"],
+  textarea,
+  select {
+    border: 3px solid #FFFFFF !important;
+    background: #1F2937;
+  }
+
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="password"]:focus,
+  input[type="number"]:focus,
+  input[type="search"]:focus,
+  textarea:focus,
+  select:focus {
+    box-shadow: 4px 4px 0 0 #FFFFFF !important;
+  }
+
+  aside {
+    border-right: 4px solid #FFFFFF !important;
+  }
+
+  header {
+    border-bottom: 4px solid #FFFFFF !important;
+  }
+
+  .bg-white {
+    background: #1F2937 !important;
+  }
+
+  .apexcharts-canvas {
+    border: 3px solid #FFFFFF;
+  }
+
+  .rounded,
+  .rounded-md,
+  .rounded-sm {
+    border: 2px solid #FFFFFF;
+  }
+}
