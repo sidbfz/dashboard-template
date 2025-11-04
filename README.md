@@ -1,85 +1,175 @@
-# Dashboard - Next.js Admin Dashboard Template and Components
+# 🎨 Multi-Style Dashboard Template
 
-**Dashboard** is a Free, open-source Next.js admin dashboard toolkit featuring 200+ UI components and templates that come with pre-built elements, components, pages, high-quality design, integrations, and much more to help you create powerful admin dashboards with ease.
+A modern, fully customizable Next.js dashboard featuring **4 distinct visual styles** that users can switch between instantly. Built with Next.js 14, TypeScript, and Tailwind CSS.
 
+[![Live Demo](https://img.shields.io/badge/demo-live-brightgreen)](https://dashboard-template-rho-eight.vercel.app/)
+[![Next.js](https://img.shields.io/badge/Next.js-14-black)](https://nextjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.0-38bdf8)](https://tailwindcss.com/)
 
-[![nextjs admin template](https://cdn.pimjo.com/Dashboard-2.png)](https://Dashboard.co/)
+## 🌟 Live Demo
 
+**[View Live Dashboard →](https://dashboard-template-rho-eight.vercel.app/)**
 
-**Dashboard** provides you with a diverse set of dashboard UI components, elements, examples and pages necessary for creating top-notch admin panels or dashboards with **powerful** features and integrations. Whether you are working on a complex web application or a basic website, **Dashboard** has got you covered.
+## ✨ Features
 
-### [✨ Visit Website](https://Dashboard.co/)
-### [🚀 Live Demo](https://demo.Dashboard.co/)
-### [📖 Docs](https://docs.Dashboard.co/)
+### 🎭 Four Unique Visual Styles
+Switch between distinct design systems on the fly:
 
-By leveraging the latest features of **Next.js 14** and key functionalities like **server-side rendering (SSR)**, **static site generation (SSG)**, and seamless **API route integration**, **Dashboard** ensures optimal performance. With the added benefits of **React 18 advancements** and **TypeScript** reliability, **Dashboard** is the ultimate choice to kickstart your **Next.js** project efficiently.
+- **Minimal** – Clean, professional, and timeless
+- **Neumorphism** – Soft UI with elegant depth and shadows
+- **Neobrutalism** – Bold, expressive with thick borders and vibrant colors
+- **Glassmorphism** – Modern frosted glass effect with blur and transparency
 
-## Installation
+### 📊 Dynamic Charts
+- Charts automatically adapt colors based on selected style
+- Revenue Growth tracking
+- Sales by Category analysis
+- Performance Metrics with radial charts
+- User engagement analytics
+- Payment overview trends
+- Device usage statistics
 
-1. Download/fork/clone the repo and Once you're in the correct directory, it's time to install all the necessary dependencies. You can do this by typing the following command:
+### 🎯 Core Features
+- ✅ Fully responsive design (mobile, tablet, desktop)
+- 🌓 Dark/Light mode support
+- 📈 Real-time data visualization with ApexCharts
+- 🎨 Style persistence across sessions (localStorage)
+- ⚡ Server-side rendering with Next.js App Router
+- 🔥 Type-safe with TypeScript
+- 💅 Styled with Tailwind CSS
+- 🚀 Optimized performance with useMemo hooks
 
-```
+## 🛠️ Tech Stack
+
+- **Framework:** Next.js 14 (App Router)
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS (4 separate configs for each style)
+- **Charts:** ApexCharts / react-apexcharts
+- **State Management:** React Context API
+- **Theme:** next-themes
+- **Icons:** Custom SVG components
+- **Fonts:** Satoshi (custom font family)
+
+## 📦 Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/sidbfz/dashboard-template.git
+
+# Navigate to project directory
+cd dashboard-template
+
+# Install dependencies
 npm install
-```
-If you're using **Yarn** as your package manager, the command will be:
 
-```
-yarn install
-```
-
-2. Okay, you're almost there. Now all you need to do is start the development server. If you're using **npm**, the command is:
-
-```
+# Run development server
 npm run dev
 ```
-And if you're using **Yarn**, it's:
+
+Open [http://localhost:3000](http://localhost:3000) to view the dashboard.
+
+## 📁 Project Structure
 
 ```
-yarn dev
+dashboard-template/
+├── src/
+│   ├── app/              # Next.js app router pages
+│   │   ├── (home)/       # Dashboard homepage
+│   │   ├── auth/         # Authentication pages
+│   │   ├── calendar/     # Calendar view
+│   │   ├── charts/       # Chart examples
+│   │   ├── forms/        # Form layouts
+│   │   ├── profile/      # User profile
+│   │   ├── styles/       # Style selector page
+│   │   └── tables/       # Data tables
+│   ├── components/       # Reusable components
+│   │   ├── Charts/       # Chart components
+│   │   ├── Layouts/      # Header, Sidebar
+│   │   ├── Tables/       # Table components
+│   │   └── ui/           # UI primitives
+│   ├── contexts/         # React contexts (StyleProvider)
+│   ├── hooks/            # Custom hooks
+│   │   ├── use-chart-colors.ts
+│   │   ├── use-mobile.ts
+│   │   └── use-click-outside.ts
+│   ├── lib/              # Utilities and configs
+│   │   └── style-config.ts
+│   ├── css/              # Style-specific CSS
+│   │   ├── neumorphism.css
+│   │   ├── neobrutalism.css
+│   │   └── glassmorphism.css
+│   └── assets/           # Static assets
+├── public/               # Public files
+│   ├── favicon.png       # Custom favicon
+│   └── images/           # Image assets
+└── tailwind.*.config.ts  # Tailwind configs per style
 ```
 
-And voila! You're now ready to start developing. **Happy coding**!
+## 🎨 Style System
 
-## Highlighted Features
-**200+ Next.js Dashboard Ul Components and Templates** - includes a variety of prebuilt **Ul elements, components, pages, and examples** crafted with a high-quality design.
-Additionally, features seamless **essential integrations and extensive functionalities**.
+The dashboard uses a sophisticated style system that applies different visual treatments across the entire UI:
 
-- A library of over **200** professional dashboard UI components and elements.
-- Five distinctive dashboard variations, catering to diverse use-cases.
-- A comprehensive set of essential dashboard and admin pages.
-- More than **45** **Next.js** files, ready for use.
-- Styling facilitated by **Tailwind CSS** files.
-- A design that resonates premium quality and high aesthetics.
-- A handy UI kit with assets.
-- Over ten web apps complete with examples.
-- Support for both **dark mode** and **light mode**.
-- Essential integrations including - Authentication (**NextAuth**), Database (**Postgres** with **Prisma**), and Search (**Algolia**).
-- Detailed and user-friendly documentation.
-- Customizable plugins and add-ons.
-- **TypeScript** compatibility.
-- Plus, much more!
+### Switching Styles
+Navigate to the **Styles** page or use the style selector to instantly switch between:
+1. Minimal
+2. Neumorphism
+3. Neobrutalism
+4. Glassmorphism
 
-All these features and more make **Dashboard** a robust, well-rounded solution for all your dashboard development needs.
+### Dynamic Chart Colors
+Each style has its own color palette for charts:
+- **Primary:** Used for main data series
+- **Secondary:** Complementary data series
+- **Tertiary:** Third-level data
+- **Quaternary:** Fourth-level data
 
-## Update Logs
+The `useChartColors` hook automatically provides the correct colors based on the active style.
 
-### Version 1.2.1 - [Mar 20, 2025]
-- Fix Peer dependency issues and NextConfig warning.
-- Updated apexcharts and react-apexhcarts to the latest version.
+## 🔧 Configuration
 
-### Version 1.2.0 - Major Upgrade and UI Improvements - [Jan 27, 2025]
+### Adding a New Style
+1. Create CSS file in `src/css/your-style.css`
+2. Create Tailwind config in `tailwind.your-style.config.ts`
+3. Update `src/lib/style-config.ts` with new style definition
+4. Add colors to `COLOR_SCHEMES` in `src/hooks/use-chart-colors.ts`
+5. Import CSS in `src/app/layout.tsx`
 
-- Upgraded to Next.js v15 and updated dependencies
-- API integration with loading skeleton for tables and charts.
-- Improved code structure for better readability.
-- Rebuilt components like dropdown, sidebar, and all ui-elements using accessibility practices.
-- Using search-params to store dropdown selection and refetch data.
-- Semantic markups, better separation of concerns and more.
+## 📊 Available Pages
 
-### Version 1.1.0
-- Updated Dependencies
-- Removed Unused Integrations
-- Optimized App
+- **Dashboard** – Overview with charts and metrics
+- **Calendar** – Event management
+- **Profile** – User profile and settings
+- **Tables** – Data tables with various layouts
+- **Forms** – Form elements and layouts
+- **Charts** – Chart examples
+- **UI Elements** – Alerts, buttons, and components
+- **Auth** – Sign-in page
+- **Settings** – User preferences
+- **Styles** – Visual style selector
 
-### Version 1.0
-- Initial Release - [May 13, 2024]
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to:
+- Report bugs
+- Suggest new features
+- Submit pull requests
+
+## 📄 License
+
+This project is open source and available under the MIT License.
+
+## 🙏 Acknowledgments
+
+- Built with [Next.js](https://nextjs.org/)
+- Charts powered by [ApexCharts](https://apexcharts.com/)
+- Icons and UI components custom-built
+- Inspired by modern dashboard design patterns
+
+## 📧 Contact
+
+For questions or feedback, reach out via GitHub issues.
+
+---
+
+**[⭐ Star this repo](https://github.com/sidbfz/dashboard-template)** if you find it helpful!

@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     default: "Dashboard - Next.js Dashboard Kit",
   },
   description:
-    "Next.js admin dashboard toolkit with 200+ templates, UI components, and integrations for fast dashboard development.",
+    "Fully customizable Next.js dashboard featuring 4 distinct visual styles that users can switch between instantly.",
   icons: {
     icon: "/favicon.png",
   },
